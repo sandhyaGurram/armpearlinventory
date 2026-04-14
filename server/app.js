@@ -1,0 +1,25 @@
+let express = require('express')
+let student = require('./router/studentRouting')
+let product = require('./router/productRouting')
+let arm = require('./router/armRouting')
+let hamsa = require('./router/hamsaRouting')
+let signup = require('./router/signupRouting')
+let excel = require('./router/excelRouting')
+let allexcel = require('./router/allexcelRouting')
+let cors = require('cors')
+
+let app = express()
+app.use(express.json({ limit: '50mb' }))
+app.use(express.urlencoded({ limit: '50mb', extended: true }))
+app.use(cors({
+    origin: 'http://localhost:3000'
+}))
+app.use('/', student)
+app.use('/', product)
+app.use('/', arm)
+app.use('/', hamsa)
+app.use('/', signup)
+app.use('/', excel)
+app.use('/', allexcel)
+
+app.listen(4000)
