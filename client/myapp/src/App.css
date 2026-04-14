@@ -1,0 +1,26 @@
+td {
+    white-space: pre-wrap;
+}
+.admindashboard ul li a{
+text-decoration: none;
+color: #fffeee;
+}
+.admindashboard ul li{
+    list-style: none;
+    padding: 5px ;
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: #a51e27;
+    border-radius: 3px;
+    text-align: center;
+    border:2px solid #a51e27;
+    
+}
+.admindashboard ul li:hover{
+    border:2px solid #a51e27;
+    background-color: #fffeee;
+    
+}
+.admindashboard ul li a:hover{
+color: #a51e27;
+}

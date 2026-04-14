@@ -1,0 +1,19 @@
+.headertop{
+    background-color: #a51e27;
+    color: #fffeee;
+}
+.headertop ul li{
+
+    padding-right: 40px;
+    
+}
+
+.headertop a{
+text-decoration: none;
+color: #fffeee ;
+}
+.headertop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
