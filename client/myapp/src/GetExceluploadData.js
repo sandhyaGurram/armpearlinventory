@@ -1,5 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import 'datatables.net-dt/css/dataTables.dataTables.css'
+import 'datatables.net-dt/js/dataTables.dataTables.min.js'
+
+import $ from 'jquery'
 
 const GetExceluploadData = () => {
     const [data, setdata] = useState([])
@@ -11,11 +15,24 @@ const GetExceluploadData = () => {
                 setdata(res.data)
             })
             .catch((err) => alert(err))
-    })
+    }, [])
+
+    useEffect(() => {
+        if (data.length > 0) {
+            // Destroy old instance if exists
+            if ($.fn.DataTable.isDataTable('#myTable')) {
+                $('#myTable').DataTable().destroy();
+            }
+
+            // Initialize
+            $('#myTable').DataTable();
+        }
+    }, [data])
+
     return (
         <div className='container p-5'>
             <h1>Order data</h1>
-            <table className='table table-bordered table-hover'>
+            <table className='table table-bordered table-hover' id='myTable'>
                 <thead>
                     <tr>
                         <th>Order Id</th>

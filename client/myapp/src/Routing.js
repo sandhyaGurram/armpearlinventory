@@ -15,6 +15,8 @@ import ExcelUpload from './ExcelUpload'
 import AllExcelUpload from './AllExcelUpload'
 import AmazonData from './AmazonData'
 import GetExceluploadData from './GetExceluploadData'
+import ShopifyProducts from './InnerPages/ShopifyProducts'
+import Customer from './InnerPages/Customer'
 
 const Routing = () => {
     return (
@@ -32,12 +34,13 @@ const Routing = () => {
 
                 <Route path='/allupload' element={<AllExcelUpload />} />
                 <Route path='/amazon' element={<AmazonData />} />
-
+                <Route path='/shopify' element={<ShopifyProducts />} />
+                <Route path='/customer' element={<Customer />} />
 
                 <Route path='/admindashboard' element={<AdminDashboard />} >
                     <Route path='addproduct' element={<AddProduct />} />
                     <Route path='deleteproduct' element={<DeleteProduct />} />
-                    <Route path='editproduct' element={<EditProduct />} />
+
                     <Route path='getexceldata' element={<GetExceluploadData />} />
                     <Route path='upload' element={<ExcelUpload />} />
                 </Route>

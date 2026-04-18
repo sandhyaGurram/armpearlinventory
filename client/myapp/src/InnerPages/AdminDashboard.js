@@ -7,8 +7,9 @@ const AdminDashboard = () => {
 
     return (
         <>
-            <h1 className='text-center'>Admin Dashboard</h1>
+
             <div className='container-fluid'>
+                <h1 className=' text-center py-5'>Admin Dashboard</h1>
 
                 <div className='row'>
                     <div className='col-md-3 '>

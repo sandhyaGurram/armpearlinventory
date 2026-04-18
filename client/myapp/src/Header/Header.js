@@ -18,15 +18,8 @@ const Header = () => {
                                 <NavLink className="nav-link text-white active" aria-current="page" to="/">Home</NavLink>
                             </li>
 
-                            <li className="nav-item">
-                                <NavLink className="nav-link text-white" to="/deleteproduct">Delete Product</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link text-white " to='/armproduct'>ARM</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link text-white " to='/hamsa'>Hamsa</NavLink>
-                            </li>
+
+
                             <li className="nav-item">
                                 <NavLink className="nav-link text-white " to='/signup'>SignUp</NavLink>
                             </li>
@@ -34,10 +27,11 @@ const Header = () => {
                                 <NavLink className="nav-link text-white " to='/admindashboard'>Admin</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link text-white " to='/upload'>Excel Upload</NavLink>
+                                <NavLink className="nav-link text-white " to='/shopify'>Shopify</NavLink>
                             </li>
+
                             <li className="nav-item">
-                                <NavLink className="nav-link text-white " to='/allupload'>All Excel Upload</NavLink>
+                                <NavLink className="nav-link text-white " to='/customer'> Customer Data</NavLink>
                             </li>
 
                         </ul>
